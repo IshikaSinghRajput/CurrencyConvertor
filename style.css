@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+nav{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(219, 190, 241);
+    padding: 23px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(51, 34, 130);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover{
+    text-decoration: none;
+    color: rgb(137, 81, 233);
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul{
+    display: flex;
+}
+
+.container{
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1{
+    margin: 23px 0;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label{
+    font-size: 25px;
+}
+
+.container form input[type='number'],
+select,
+label{
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+}
+
+.btn{
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 23px;
+    background: #f851f8;
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.output{
+    display: none;
+}
+
+.output table{
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+footer{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+
+/* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    .container form select,
+    .container form label {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .output {
+        overflow-x: auto;
+    }
+
+    .output table {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* 📲 Extra small screens (phones) */
+@media (max-width: 480px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .output h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+/* 🍔 Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Mobile Navbar (clean, non-expanding) */
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;              
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    /* Menu panel (overlay style) */
+    nav ul {
+        position: fixed;
+        top: 70px;                
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: rgb(219, 190, 241);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        transform: translateY(0);  
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        position: relative;
+        z-index: 1002;  
+        font-size: 25px; 
+        margin-top: 10px;
+        white-space: nowrap; 
+    }
+}
