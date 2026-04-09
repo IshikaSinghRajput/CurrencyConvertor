@@ -26,4 +26,4 @@ Demo : https://currencyconverterbyishika.netlify.app/
 - **JavaScript (Vanilla)** – Logic & API handling  
 - **Public Exchange Rate API** – Live currency data  
 
----
+----
