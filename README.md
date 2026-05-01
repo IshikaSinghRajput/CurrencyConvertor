@@ -17,7 +17,7 @@ Demo : https://currencyconverterbyishika.netlify.app/
 - 🔁 Swap currencies easily
 - ❌ Input validation for better UX
 
----
+----
 
 ## 🛠️ Tech Stack
 
