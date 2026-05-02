@@ -3,7 +3,7 @@
 A simple and responsive **Currency Converter web app** built using **HTML, CSS, and Vanilla JavaScript**.  
 Convert between multiple currencies with live exchange rates and a clean, user-friendly UI.
 
----
+----
 
 Demo : https://currencyconverterbyishika.netlify.app/
 
